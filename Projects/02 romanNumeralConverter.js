@@ -53,9 +53,7 @@ const arabicToRoman = {
     let toRoman = '', value;
     for(let i = numLength(number); i > 0; i--){
       value  = (parseInt(number/addZeros(i))) * addZeros(i);
-      if(value == 0){
-        //do nothing
-      }else{
+      if(value != 0){
         toRoman += arabicToRoman[value];
       }
       number = number - value;
