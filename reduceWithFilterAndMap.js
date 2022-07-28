@@ -1,3 +1,8 @@
+/*
+Using reduce to find the average IMDB rating of the movies 
+directed by Christopher Nolan
+*/
+
 // The global variable
 const watchList = [
     {
