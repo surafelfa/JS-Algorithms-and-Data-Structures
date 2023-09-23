@@ -8,11 +8,8 @@
 1(555) 555-5555
 1 (555) 555-5555
 */
-
-function telephoneCheck(str) {
-    const regEx = /^(1)?\s?(\d{3}|(\(\d{3}\)))[\s-]?\d{3}[\s-]?\d{4}$/;
-  
-    return regEx.test(str);
+function isValid(phoneNumber) {
+  const regExp = /^(1\s?)?(\(\d{3}\)|\d{3})(-|\s)?\d{3}(-|\s)?\d{4}$/;
+  return regExp.test(phoneNumber);
 }
-  
-  telephoneCheck("1 555)555-5555");
+module.exports = isValid;
